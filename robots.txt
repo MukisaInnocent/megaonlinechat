@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://megaonlinechat.com/sitemap.xml

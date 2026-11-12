@@ -1,0 +1,9 @@
+{
+  "name": "MegaOnlineChat",
+  "short_name": "MegaOnlineChat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07142F",
+  "theme_color": "#07142F",
+  "icons": [{ "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }]
+}

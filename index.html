@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MegaOnlineChat | Chat, Videos, Trivia, Music & Games</title>
+  <meta name="description" content="MegaOnlineChat brings community chat, video tasks, trivia, music, wheel spin, daily check-ins and chess & draughts into one simple, mobile-friendly dashboard.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://megaonlinechat.com/">
+  <link rel="icon" type="image/png" href="/images/icon-512.png">
+  <link rel="apple-touch-icon" href="/images/icon-512.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MegaOnlineChat">
+  <meta property="og:title" content="MegaOnlineChat | Chat, Videos, Trivia, Music & Games">
+  <meta property="og:description" content="MegaOnlineChat brings community chat, video tasks, trivia, music, wheel spin, daily check-ins and chess & draughts into one simple, mobile-friendly dashboard.">
+  <meta property="og:url" content="https://megaonlinechat.com/">
+  <meta property="og:image" content="https://megaonlinechat.com/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MegaOnlineChat: chat, videos, trivia, music and games in one simple dashboard">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MegaOnlineChat | Chat, Videos, Trivia, Music & Games">
+  <meta name="twitter:description" content="MegaOnlineChat brings community chat, video tasks, trivia, music, wheel spin, daily check-ins and chess & draughts into one simple, mobile-friendly dashboard.">
+  <meta name="twitter:image" content="https://megaonlinechat.com/images/og.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"MegaOnlineChat","url":"https://megaonlinechat.com/","description":"MegaOnlineChat brings community chat, video tasks, trivia, music, wheel spin, daily check-ins and chess & draughts into one simple, mobile-friendly dashboard."}
+  </script>
+  <meta name="theme-color" content="#07142F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/demos.css">
+  <link rel="stylesheet" href="css/glass.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="MegaOnlineChat home">
+        <span class="l-1">Mega</span><span class="l-2">Online</span><span class="l-3">Chat</span>
+      </a>
+      <a href="#" class="btn btn-join" data-cta>JOIN NOW</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <!-- Shows CONFIG.onlineCount if you set a real figure, otherwise the text below -->
+        <div class="online-pill">
+          <span class="online-dot" aria-hidden="true"></span>
+          <strong class="online-count" id="onlineCount"></strong>
+          <span id="onlineText">members earning right now</span>
+        </div>
+        <h1>
+          <span class="hero-kicker">Online Activities</span>
+          <span class="accent" id="rotator" aria-live="polite">Video tasks</span>
+        </h1>
+        <div class="explain-box">
+          <p>Earn <strong data-money="daily"></strong> every day paid straight to your <strong id="payoutMethod"></strong> wallet. Chat, engage with videos, play trivia, games and more.</p>
+          <p class="explain-highlight">No experience needed. Just your phone.</p>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-xl" data-cta><span aria-hidden="true">🚀</span> Create an account</a>
+          <a href="#activities" class="btn btn-outline btn-xl"><i class="fa-solid fa-chevron-down"></i> See all activities</a>
+        </div>
+        <div class="joined">
+          <div class="avatars" aria-hidden="true">
+            <span class="av av-purple"><i class="fa-solid fa-circle-play"></i></span>
+            <span class="av av-coral"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="av av-blue"><i class="fa-solid fa-chess-knight"></i></span>
+            <span class="av av-green"><i class="fa-solid fa-headphones"></i></span>
+            <span class="av av-plus">+</span>
+          </div>
+          <p><strong>9 activities</strong> in one dashboard</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 01 COMMUNITY CHAT ================= -->
+    <section class="stream t-green stream-first" id="chat">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">COMMUNITY CHAT</span>
+              <h2>Chat With Members</h2>
+              <p>Join a friendly room and talk about whatever you like.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="stream-row">
+              <div class="stream-stat"><span class="pulse"></span><strong>Community room</strong></div>
+              <div class="stream-chips"><span>MODERATED</span><span class="chip-alt">FRIENDLY</span></div>
+            </div>
+            <div class="people-row" aria-hidden="true">
+              <div><span class="ring r1">AM</span><small>Amina</small></div>
+              <div><span class="ring r2">DA</span><small>Daniel</small></div>
+              <div><span class="ring r3">GR</span><small>Grace</small></div>
+              <div><span class="ring r4">PE</span><small>Peter</small></div>
+              <div><span class="ring r5">JO</span><small>Joy</small></div>
+              <div><span class="ring r6">SA</span><small>Sam</small></div>
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="typing" id="chatTyping" hidden><span></span><span></span><span></span></div>
+            <div class="stream-bottom">
+              <div class="stream-note"><span class="pulse"></span> Reward per chat <strong class="money-inline">+<span data-money="chat"></span></strong></div>
+              <a href="#" class="stream-btn" data-cta>Chat Now <span>→</span></a>
+            </div>
+            <div class="stream-trust"><span>✓ Friendly rooms</span><span>✓ Works on any phone</span><span>✓ Register to join</span></div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn rb-mix" data-cta>Register To Chat <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACTIVITIES INTRO ================= -->
+    <section class="intro-band" id="activities">
+      <div class="container intro-inner">
+        <div class="intro-label"><span></span>ACTIVITIES</div>
+        <h2>9 Fun Activities to <span>Explore</span></h2>
+        <p>No special skills needed. Pick what you enjoy and try each one at your own pace.</p>
+      </div>
+    </section>
+
+    <!-- ================= WELCOME CARD ================= -->
+    <section class="stream t-welcome" id="welcome">
+      <div class="container stream-wrap">
+        <div class="welcome-card">
+          <div class="welcome-top">
+            <span class="welcome-live"><span></span>WELCOME</span>
+            <span class="welcome-new">🏆 NEW MEMBERS</span>
+          </div>
+          <div class="welcome-visual" aria-hidden="true">
+            <span class="coin c1">●</span><span class="coin c2">●</span><span class="coin c3">●</span>
+            <div class="gift">🎁</div>
+            <!-- Shows CONFIG.welcomeOffer if you set a real offer -->
+            <div class="welcome-amount" data-money="welcomeBonus"></div>
+          </div>
+          <h2>Welcome <span>Aboard</span></h2>
+          <p id="welcomeText">Join today and receive <strong data-money="welcomeBonus"></strong> in your account!</p>
+          <div class="welcome-benefits">
+            <div><span>⚡</span>Quick<br>Sign-up</div>
+            <div><span>🎯</span>9<br>Activities</div>
+            <div><span>📱</span>Mobile<br>Friendly</div>
+            <div><span>🛡️</span>Clear<br>Rules</div>
+          </div>
+          <a href="#" class="register-btn rb-mix" data-cta><span aria-hidden="true">👤</span> Register Now <span>→</span></a>
+          <div class="welcome-trust">🔒 Clear terms &nbsp;•&nbsp; Mobile friendly &nbsp;•&nbsp; Start in minutes</div>
+        </div>
+        <p class="note"><i class="fa-solid fa-circle-info"></i> Availability and any rewards vary by activity and are not guaranteed. See the <a href="terms.html">Terms</a>.</p>
+      </div>
+    </section>
+
+    <!-- ================= 02 VIDEO ================= -->
+    <section class="stream t-pink" id="video">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon"><i class="fa-solid fa-play"></i></div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 02</span>
+              <h2>Engage With Videos</h2>
+              <p>Watch short videos and complete the task attached.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="stream-chips"><span>TikTok</span><span>YouTube</span></div>
+            <div class="inner-card">
+              <div class="player-screen" id="videoScreen">
+                <span class="inner-tag">SAMPLE ACTIVITY</span>
+                <button class="play-btn" id="videoBig" aria-label="Play sample video"><i class="fa-solid fa-play"></i></button>
+                <span class="player-title">Sample video task</span>
+              </div>
+              <div class="progress"><span id="videoBar"></span></div>
+              <div class="player-meta">
+                <span id="videoTime">0:00 / 0:12</span>
+                <span class="status-chip" id="videoStatus">Ready</span>
+              </div>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per video</span><strong class="money-chip">+<span data-money="video"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="widget-actions">
+                <button class="btn btn-ghost" id="videoPlay"><i class="fa-solid fa-play"></i> Play</button>
+                <button class="btn btn-ghost" id="videoReset"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+              </div>
+              <a href="#" class="stream-btn" data-cta>Watch Now <span>→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and start with video tasks</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 SPONSORED ================= -->
+    <section class="stream t-gold" id="sponsored">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon">AD</div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 03</span>
+              <h2>View Sponsored Content</h2>
+              <p>Featured brand content, always clearly labelled.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="inner-card ad-row">
+              <div class="ad-logo">B</div>
+              <div class="ad-info">
+                <span class="inner-eyebrow">SPONSORED</span>
+                <h3>Explore today's featured brand</h3>
+                <div class="progress"><span id="adBar"></span></div>
+                <p class="ad-status" id="adStatus">Press the button to start the 5 second view.</p>
+              </div>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per ad</span><strong class="money-chip">+<span data-money="ad"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="stream-avail">Ads available <strong data-limit="ad"></strong></div>
+              <button class="stream-btn" id="adStart">View Ad <span>→</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and see available sponsored content</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 QUIZ ================= -->
+    <section class="stream t-teal" id="trivia">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon">?</div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 04</span>
+              <h2>Trivia Quiz</h2>
+              <p>Answer questions and test your knowledge.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="inner-card quiz" id="quiz" aria-live="polite">
+              <div class="quiz-top">
+                <span class="inner-eyebrow">SAMPLE QUESTION</span>
+                <span class="inner-eyebrow muted-eyebrow" id="quizCount">Question 1 of 3</span>
+              </div>
+              <div class="progress slim"><span id="quizBar"></span></div>
+              <h3 id="quizQuestion">Loading…</h3>
+              <div class="options" id="quizOptions"></div>
+              <p class="quiz-feedback" id="quizFeedback"></p>
+              <button class="stream-btn" id="quizNext" hidden>Next question</button>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per correct answer</span><strong class="money-chip">+<span data-money="trivia"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="stream-avail">Questions available <strong data-limit="trivia"></strong></div>
+              <a href="#" class="stream-btn" data-cta>Play Trivia <span>→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and start playing trivia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 STATUS ================= -->
+    <section class="stream t-green" id="status">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 05</span>
+              <h2>Status Stories</h2>
+              <p>Browse short updates shared by the community.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="story" id="story">
+              <div class="story-bars" id="storyBars"></div>
+              <div class="story-head">
+                <span class="avatar ring" id="storyAvatar">E</span>
+                <div><strong id="storyName">Member</strong><small id="storyAgo">just now</small></div>
+              </div>
+              <div class="story-slide" id="storySlide"><p id="storyText"></p></div>
+              <button class="story-hit left" id="storyPrev" aria-label="Previous story"></button>
+              <button class="story-hit right" id="storyNext" aria-label="Next story"></button>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per status view</span><strong class="money-chip">+<span data-money="status"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="stream-avail">Statuses available <strong data-limit="status"></strong></div>
+              <a href="#" class="stream-btn" data-cta>View Status <span>→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and view status stories</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 MUSIC ================= -->
+    <section class="stream t-purple" id="music">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon"><i class="fa-solid fa-music"></i></div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 06</span>
+              <h2>Listen to Music</h2>
+              <p>Listen to featured tracks and artists.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="inner-card">
+              <div class="music-top">
+                <div class="music-art"><i class="fa-solid fa-music"></i></div>
+                <div class="music-info">
+                  <span class="inner-eyebrow">NOW PLAYING</span>
+                  <strong id="musicTitle">Sample Track One</strong>
+                  <small id="musicArtist">Demo Artist</small>
+                  <div class="eq" id="musicEq"><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+              <div class="progress"><span id="musicBar"></span></div>
+              <div class="player-meta"><span id="musicTime">0:00</span><span id="musicDur">0:28</span></div>
+              <div class="music-controls">
+                <button class="round" id="musicPrev" aria-label="Previous track"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="round big" id="musicPlay" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+                <button class="round" id="musicNext" aria-label="Next track"><i class="fa-solid fa-forward-step"></i></button>
+              </div>
+              <ul class="tracklist" id="trackList"></ul>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per song</span><strong class="money-chip">+<span data-money="music"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="stream-avail">Songs available <strong data-limit="music"></strong></div>
+              <a href="#" class="stream-btn" data-cta>Listen Now <span>→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and start listening</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 SPIN ================= -->
+    <section class="stream t-orange" id="spin">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon">★</div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 07</span>
+              <h2>Wheel Spin</h2>
+              <p>Spin the wheel and see where it lands.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="wheel-wrap">
+              <div class="pointer"></div>
+              <canvas id="wheel" width="320" height="320" aria-label="Spin wheel"></canvas>
+            </div>
+            <p class="spin-result" id="spinResult">Press spin to try the demo.</p>
+            <div class="stream-bottom boxed">
+              <div class="stream-note"><span class="pulse"></span> Top prize <strong class="money-inline">+<span data-money="spin"></span></strong> &nbsp; <div class="stream-avail">Spins available <strong data-limit="spin"></strong></div></div>
+              <button class="stream-btn" id="spinBtn">Spin Now <span>→</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and spin for real</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 08 CHECK-IN ================= -->
+    <section class="stream t-blue" id="checkin">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon">🎁</div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 08</span>
+              <h2>Daily Check-in</h2>
+              <p>Come back every day and keep your streak alive.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="inner-card">
+              <div class="checkin-head">
+                <span class="inner-eyebrow">YOUR STREAK</span>
+                <span class="streak-count"><i class="fa-solid fa-fire"></i> <span id="streakNum">0</span> days</span>
+              </div>
+              <div class="days" id="days"></div>
+              <p class="checkin-status" id="checkinStatus"></p>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Daily login bonus</span><strong class="money-chip">+<span data-money="login"></span></strong></div>
+            <div class="stream-bottom">
+              <button class="btn btn-ghost" id="checkinReset"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+              <button class="stream-btn" id="checkinBtn">Check In <span>→</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and start your streak</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 09 GAMES ================= -->
+    <section class="stream t-violet" id="games">
+      <div class="container stream-wrap">
+        <div class="stream-card">
+          <div class="stream-head">
+            <div class="stream-icon"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="stream-title">
+              <span class="stream-eyebrow">ACTIVITY 09</span>
+              <h2>Play Games</h2>
+              <p>Chess and draughts against other members.</p>
+            </div>
+            <span class="stream-badge"><span></span>SAMPLE</span>
+          </div>
+          <div class="stream-body">
+            <div class="tabs" role="tablist">
+              <button class="tab active" data-game="chess" role="tab">♟ Chess</button>
+              <button class="tab" data-game="draughts" role="tab">● Draughts</button>
+            </div>
+            <div class="inner-card">
+              <span class="inner-eyebrow">SAMPLE MATCH REPLAY</span>
+              <div class="board" id="board" aria-label="Game board"></div>
+              <p class="game-status" id="gameStatus"></p>
+              <div class="moves" id="gameMoves"></div>
+            </div>
+            <div class="stream-note-row money-row"><span class="pulse"></span> <span>Reward per win</span><strong class="money-chip">+<span data-money="game"></span></strong></div>
+            <div class="stream-bottom">
+              <div class="widget-actions">
+                <button class="btn btn-ghost" id="gamePlay"><i class="fa-solid fa-pause"></i> Pause</button>
+                <button class="btn btn-ghost" id="gameRestart"><i class="fa-solid fa-rotate-left"></i> Restart</button>
+              </div>
+              <a href="#" class="stream-btn" data-cta>Play Now <span>→</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="register-wrap">
+          <a href="#" class="register-btn" data-cta>Register Now <span>→</span></a>
+          <p>Join and start playing games</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMUNITY ================= -->
+    <section class="community" id="community">
+      <div class="container block-head">
+        <span class="block-eyebrow">COMMUNITY • MEMBER FEEDBACK</span>
+        <h2>What Our Community Says</h2>
+        <p>Reviews from members using MegaOnlineChat.</p>
+      </div>
+      <!-- Filled from CONFIG.testimonials in js/script.js -->
+      <div class="community-slider">
+        <div class="community-track" id="communityTrack"></div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq-section" id="faq">
+      <div class="container narrow">
+        <div class="block-head">
+          <span class="block-eyebrow">HELP CENTER • FAQ</span>
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p>Quick answers to the most common questions about MegaOnlineChat.</p>
+        </div>
+        <div class="faq" id="faqList">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What is MegaOnlineChat? <i>+</i></button>
+            <div class="faq-a"><p>MegaOnlineChat is an online platform that brings several activities, such as video tasks, quizzes and games, into a single dashboard.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How can I get started? <i>+</i></button>
+            <div class="faq-a"><p>Tap any Register button, create your account, read the terms, then pick an activity from your dashboard.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What activities can I do on the platform? <i>+</i></button>
+            <div class="faq-a"><p>Community chat, video tasks, sponsored content, trivia, status stories, music, wheel spin, daily check-in, and chess and draughts.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How do I receive earnings? <i>+</i></button>
+            <div class="faq-a"><p>Replace this answer with your actual payout methods, minimum amounts and processing times.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can I use MegaOnlineChat from my phone? <i>+</i></button>
+            <div class="faq-a"><p>Yes. The site is designed to work on phones, tablets and computers.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Are the samples on this page real? <i>+</i></button>
+            <div class="faq-a"><p>No. They are interactive demos that show how each activity looks and works. They do not award anything.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Is registration free? <i>+</i></button>
+            <div class="faq-a"><p>Replace this answer with your actual policy. State clearly whether any fees apply, and what they are for.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">How can I contact support? <i>+</i></button>
+            <div class="faq-a"><p>Use the Contact Support link below or the details in the footer.</p></div>
+          </div>
+        </div>
+        <p class="faq-more"><span class="pulse"></span> Still have a question? <a href="#" data-email>Contact Support →</a></p>
+      </div>
+    </section>
+
+    <!-- ================= NETWORK ================= -->
+    <section class="network" id="network">
+      <div class="container narrow">
+        <div class="block-head">
+          <span class="block-eyebrow">MEGAONLINECHAT NETWORK</span>
+          <h2>One Platform. <span>Many African Countries.</span></h2>
+          <p>MegaOnlineChat is available in the countries listed below.</p>
+          <div class="network-stat"><strong id="countryTotal">0</strong> African Countries</div>
+        </div>
+        <!-- Filled from CONFIG.regions in js/script.js -->
+        <div class="regions" id="regionList"></div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="final-cta-section" id="contact">
+      <div class="cta-glow g1"></div>
+      <div class="cta-glow g2"></div>
+      <div class="container">
+        <div class="final-cta">
+          <span class="cta-eyebrow">🚀 YOUR NEXT MOVE STARTS HERE</span>
+          <h2>Ready To <span>Get Started?</span></h2>
+          <p>Create an account, read the terms, and explore the activities on MegaOnlineChat at your own pace.</p>
+          <div class="cta-actions">
+            <a href="#" class="cta-primary" data-cta>Get Started Now <strong>→</strong></a>
+            <a href="#network" class="cta-secondary">Explore The Network</a>
+          </div>
+          <div class="cta-trust">
+            <span><i></i>Simple Registration</span>
+            <span><i></i>Multiple Activities</span>
+            <span><i></i>Mobile Friendly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="l-1">Mega</span><span class="l-2">Online</span><span class="l-3">Chat</span></a>
+        <p>Online activities in one simple dashboard. Pick what you enjoy and explore at your own pace.</p>
+        <div class="footer-live"><span></span>ONLINE PLATFORM</div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#top">Home</a>
+        <a href="#network">Our Network</a>
+        <a href="#faq">FAQs</a>
+        <a href="#" data-cta>Register</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#video">Watch Videos</a>
+        <a href="#trivia">Trivia</a>
+        <a href="#sponsored">Sponsored Content</a>
+        <a href="#games">Play Games</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#faq">Help Center</a>
+        <a href="#" data-email>Contact Us</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year">2026</span> <b data-brand>MegaOnlineChat</b>. All rights reserved.</span>
+      <div class="socials" id="socials"></div>
+    </div>
+    <div class="container footer-channel" id="channelWrap" hidden>
+      <a href="#" class="channel-btn" id="channelBtn" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Join WhatsApp Channel</a>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp-fab" data-whatsapp hidden aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="js/script.js"></script>
+  <script src="js/demos.js"></script>
+  <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=uE60hR9X7I5K"></script>
+</body>
+</html>

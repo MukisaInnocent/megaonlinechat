@@ -1,0 +1,129 @@
+/* ==========================================================
+   MegaOnlineChat - glass theme
+   Frosted, see-through panels over soft colour glows.
+   Loaded last; delete the <link> to css/glass.css to turn it off.
+   ========================================================== */
+:root {
+  --glass: rgba(255, 255, 255, .055);
+  --glass-strong: rgba(255, 255, 255, .085);
+  --glass-line: rgba(255, 255, 255, .14);
+  --glass-shine: inset 0 1px 0 rgba(255, 255, 255, .18), inset 0 -1px 0 rgba(255, 255, 255, .03);
+  --glass-blur: blur(18px) saturate(150%);
+}
+
+/* ---------- Colour glows behind the glass ---------- */
+body { background: #050E24; }
+body::before {
+  content: ""; position: fixed; inset: -10%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(42vw 42vw at 10% 15%, rgba(57, 217, 138, .38), transparent 62%),
+    radial-gradient(38vw 38vw at 90% 22%, rgba(139, 77, 255, .40), transparent 62%),
+    radial-gradient(40vw 40vw at 85% 75%, rgba(255, 79, 154, .30), transparent 62%),
+    radial-gradient(44vw 44vw at 12% 80%, rgba(38, 120, 232, .40), transparent 62%),
+    radial-gradient(30vw 30vw at 50% 50%, rgba(255, 212, 71, .14), transparent 62%);
+  animation: glowDrift 24s ease-in-out infinite alternate;
+}
+@keyframes glowDrift {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(-2%, 2%, 0) scale(1.06); }
+}
+
+/* shared glass recipe */
+.site-header, .online-pill, .explain-box, .stream-card, .inner-card, .stream-note-row,
+.stream-bottom.boxed, .welcome-card, .welcome-benefits div, .intro-band, .community-card,
+.faq-item, .region, .country-pill, .final-cta, .site-footer, .network-stat, .story,
+.btn-outline, .btn-ghost, .cta-secondary, .socials a, .option, .day, .tab, .round:not(.big) {
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: 0;
+  background: rgba(7, 20, 47, .45);
+  border-bottom: 1px solid var(--glass-line);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .25);
+}
+
+/* ---------- Hero ---------- */
+.online-pill { background: rgba(255, 255, 255, .06); border-color: rgba(57, 217, 138, .5); box-shadow: var(--glass-shine), 0 0 24px rgba(57, 217, 138, .15); }
+.explain-box {
+  background: linear-gradient(135deg, rgba(7, 93, 60, .55), rgba(6, 69, 47, .35));
+  border: 1px solid rgba(57, 217, 138, .45);
+  box-shadow: var(--glass-shine), 0 20px 50px rgba(0, 0, 0, .3);
+}
+.btn-outline { background: rgba(255, 255, 255, .06); box-shadow: var(--glass-shine); }
+.btn-ghost { background: rgba(255, 255, 255, .07); border-color: var(--glass-line); box-shadow: var(--glass-shine); }
+.av { border-color: rgba(255, 255, 255, .35); }
+
+/* ---------- Activity cards ---------- */
+.stream-card {
+  background: linear-gradient(180deg, rgba(var(--t), .14) 0%, rgba(255, 255, 255, .035) 45%, rgba(255, 255, 255, .02) 100%);
+  border: 1px solid rgba(var(--t), .4);
+  box-shadow: var(--glass-shine), 0 20px 50px rgba(0, 0, 0, .35), 0 0 40px rgba(var(--t), .1);
+}
+.stream-head {
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--h1) 75%, transparent),
+    color-mix(in srgb, var(--h2) 60%, transparent),
+    color-mix(in srgb, var(--h3) 70%, transparent));
+  border-bottom: 1px solid rgba(255, 255, 255, .16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22);
+}
+.stream-badge { background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .3); }
+.stream-icon { box-shadow: 0 0 0 4px rgba(255, 255, 255, .12), inset 0 1px 0 rgba(255, 255, 255, .5), 0 8px 18px rgba(0, 0, 0, .25); }
+.inner-card, .stream-note-row, .stream-bottom.boxed {
+  background: var(--glass); border: 1px solid var(--glass-line); box-shadow: var(--glass-shine);
+}
+.stream-chips span { background: rgba(var(--t), .14); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15); }
+
+/* glossy buttons */
+.stream-btn, .register-btn, .cta-primary, .btn-join, .btn-primary, .round.big, .tab.active {
+  position: relative; overflow: hidden;
+}
+.stream-btn::after, .register-btn::after, .cta-primary::after, .btn-join::after, .btn-primary::after {
+  content: ""; position: absolute; inset: 0 0 50% 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0));
+  border-radius: inherit;
+}
+
+/* ---------- Intro + welcome ---------- */
+.intro-band { background: rgba(255, 255, 255, .03); border-color: var(--glass-line); }
+.welcome-card {
+  background: linear-gradient(180deg, rgba(255, 212, 71, .08), rgba(255, 255, 255, .03));
+  border: 1px solid rgba(57, 217, 138, .4);
+  box-shadow: var(--glass-shine), 0 20px 50px rgba(0, 0, 0, .35);
+}
+.welcome-benefits div { background: var(--glass); border-color: var(--glass-line); box-shadow: var(--glass-shine); }
+.welcome-amount { background: rgba(7, 20, 47, .55); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); }
+
+/* ---------- Community, FAQ, network ---------- */
+.community-card, .faq-item, .region, .final-cta {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .025));
+  border: 1px solid var(--glass-line);
+  box-shadow: var(--glass-shine), 0 16px 40px rgba(0, 0, 0, .28);
+}
+.community-card:hover, .faq-item:hover, .region:hover { border-color: rgba(57, 217, 138, .5); }
+.community-slider { -webkit-mask-image: none; mask-image: none; }
+.country-pill { background: var(--glass); border-color: var(--glass-line); box-shadow: var(--glass-shine); }
+.region-icon { background: rgba(255, 255, 255, .06); box-shadow: var(--glass-shine); }
+.network, .final-cta-section { background: transparent; }
+.network-stat { background: var(--glass); box-shadow: var(--glass-shine); }
+.cta-secondary { background: rgba(255, 255, 255, .07); box-shadow: var(--glass-shine); }
+
+/* ---------- Demo widgets ---------- */
+.option { background: rgba(255, 255, 255, .06); border-color: var(--glass-line); }
+.day { background: rgba(255, 255, 255, .05); border-color: var(--glass-line); }
+.story { background: rgba(6, 35, 26, .55); }
+.bubble { background: rgba(155, 92, 255, .14); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+
+/* ---------- Footer ---------- */
+.site-footer { background: rgba(5, 14, 36, .55); border-top: 1px solid var(--glass-line); }
+.socials a { background: var(--glass); border-color: var(--glass-line); }
+
+/* Older browsers without blur: keep panels readable */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .stream-card, .community-card, .faq-item, .region, .final-cta, .welcome-card { background-color: rgba(11, 20, 45, .92); }
+  .site-header { background: rgba(7, 20, 47, .96); }
+}
+@media (prefers-reduced-motion: reduce) { body::before { animation: none; } }
