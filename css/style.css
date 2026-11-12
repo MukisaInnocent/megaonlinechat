@@ -456,6 +456,8 @@ button { font-family: inherit; }
   box-shadow: 0 0 0 8px rgba(37, 211, 102, .15), 0 10px 26px rgba(0, 0, 0, .35);
   animation: fabPulse 2.4s ease-in-out infinite;
 }
+/* Set by script.js when the Chatway bubble sits on the left */
+.whatsapp-fab.fab-right { left: auto; right: 18px; }
 
 /* ---------- Legal pages ---------- */
 .legal { padding: 60px 0 80px; }

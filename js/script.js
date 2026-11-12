@@ -81,7 +81,25 @@ document.addEventListener("DOMContentLoaded", () => {
   initSocials();
   initFaq();
   initQuiz();
+  initFabSide();
 });
+
+/* Keep the WhatsApp button on the opposite side to the Chatway bubble */
+function initFabSide() {
+  const fab = document.querySelector(".whatsapp-fab");
+  if (!fab) return;
+  const place = () => {
+    const chat = document.getElementById("chatway_widget_trigger");
+    if (!chat) return false;
+    const r = chat.getBoundingClientRect();
+    if (!r.width) return false;
+    fab.classList.toggle("fab-right", r.left + r.width / 2 < window.innerWidth / 2);
+    return true;
+  };
+  let tries = 0;
+  const timer = setInterval(() => { if (place() || ++tries > 30) clearInterval(timer); }, 500);
+  window.addEventListener("resize", place);
+}
 
 const el = (tag, cls, text) => {
   const e = document.createElement(tag);
